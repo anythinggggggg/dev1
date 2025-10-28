@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js"></script>
 </head>
 <body>
-    
+    <button onclick="addParagraph()">Add Paragraph</button>
+    <p>this is old paragraph</p>
+    <script>
+        function addParagraph() {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'this is new paragraph';
+            newParagraph.style.backgroundColor = 'yellow';
+            newParagraph.style.color = 'red';
+            document.body.appendChild(newParagraph);
+        }
+    </script>
 </body>
 </html>
